@@ -1,8 +1,8 @@
 {
     "name": "kartik-v/yii2-sortable-input",
-    "description": "Fork from Sortable input widget based on yii2-sortable extension.",
+    "description": "Sortable input widget based on yii2-sortable extension.",
     "keywords": ["yii2", "extension", "widget", "input", "sortable", "range", "jquery", "bootstrap"],
-    "homepage": "https://github.com/pixiumdigital/yii2-sortable-input",
+    "homepage": "https://github.com/kartik-v/yii2-sortable-input",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
