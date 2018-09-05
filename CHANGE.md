@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Change Log: `yii2-sortable-input`
 =================================
 
@@ -13,19 +14,23 @@ Change Log: `yii2-sortable-input`
 
 ## Version 1.2.0
 
+=======
+version 1.2.0
+=============
+>>>>>>> parent of 11f6683... Fix #12: Correct sortable input plugin for the latest html5sortable release
 **Date:** 29-Jan-2015
 
 - (enh #1): Plugin enhancement to update parent keys for connected sortables.
 
-## Version 1.1.0
-
+version 1.1.0
+=============
 **Date:** 10-Nov-2014
 
 - Set dependency on Krajee base components
 - Set release to stable
 
-## Version 1.0.0
-
+version 1.0.0
+=============
 **Date:** 01-Aug-2014
 
 - Initial release
