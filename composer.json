@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "kartik-v/yii2-sortable": "1.2"
+        "kartik-v/yii2-sortable": "~1.2"
     },
     "autoload": {
         "psr-4": {
