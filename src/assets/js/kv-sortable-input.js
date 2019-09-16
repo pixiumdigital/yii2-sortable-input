@@ -31,10 +31,10 @@
         listen: function () {
             var self = this;
             self.$sortable.on('sortupdate', function (e, ui) {
-                var $parent = ui.startparent, parentId = $parent.attr('id');
+                var parent = this.startparent, parentId = $(parent).attr('id');
                 if (parentId != self.$sortable.attr('id')) {
-                    var $parentEl = $("input[data-sortable='" + $parent.attr('id') + "']");
-                    $parentEl.val(self.getKeys($parent));
+                    var $parentEl = $("input[data-sortable='" + $(parent).attr('id') + "']");
+                    $parentEl.val(self.getKeys($(parent)));
                 }
                 self.$element.val(self.getKeys());
                 self.$element.trigger('change');
