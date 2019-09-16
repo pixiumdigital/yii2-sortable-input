@@ -3,7 +3,7 @@
  * @version 1.2.1
  *
  * JQuery Plugin for yii2-sortable-input.
- * 
+ *
  * Author: Kartik Visweswaran
  * Copyright: 2014, Kartik Visweswaran, Krajee.com
  * For more JQuery plugins visit http://plugins.krajee.com
