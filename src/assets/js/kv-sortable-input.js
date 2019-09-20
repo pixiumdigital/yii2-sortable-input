@@ -31,18 +31,19 @@
         listen: function () {
             var self = this;
             self.$sortable.on('sortupdate', function (e) {
-                var parent = this.startparent, parentId = $(parent).attr('id');
-                console.log(parent);
-                console.log(parentId);
-                console.log(this.$sortable.attr('id'));
-                if (parentId != this.$sortable.attr('id')) {
-                    console.log("parentID != sortable is");
-                    var $parentEl = $("input[data-sortable='" + $(parent).attr('id') + "']");
-                    console.log($parentEl)
-                    $parentEl.val(self.getKeys($(parent)));
+                //var $parent = $(e.detail.origin.container);
+                //FIX - Lio 2019-09-10 (originalEvent missing)
+                var $parent = $(e.originalEvent.detail.origin.container);
+
+                if (!$parent.length) {
+                    return;
                 }
-                self.$element.val(self.getKeys());
-                self.$element.trigger('change');
+                if ($parent.attr('id') != self.$sortable.attr('id')) {
+                    var $parentEl = $("input[data-sortable='" + $parent.attr('id') + "']");
+                    $parentEl.val(self.getKeys($parent));
+                }
+                self.$element.val(self.getKeys()).trigger('change');
+                //self.$element.trigger('change');
             });
             self.$form.on('reset', function () {
                 setTimeout(function () {
