@@ -30,7 +30,7 @@
         },
         listen: function () {
             var self = this;
-            self.$sortable.on('sortupdate', function (e, ui) {
+            self.$sortable.on('sortupdate', function (e) {
                 var parent = this.startparent, parentId = $(parent).attr('id');
                 if (parentId != self.$sortable.attr('id')) {
                     var $parentEl = $("input[data-sortable='" + $(parent).attr('id') + "']");
