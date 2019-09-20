@@ -32,8 +32,13 @@
             var self = this;
             self.$sortable.on('sortupdate', function (e) {
                 var parent = this.startparent, parentId = $(parent).attr('id');
-                if (parentId != self.$sortable.attr('id')) {
+                console.log(parent);
+                console.log(parentId);
+                console.log(this.$sortable.attr('id'));
+                if (parentId != this.$sortable.attr('id')) {
+                    console.log("parentID != sortable is");
                     var $parentEl = $("input[data-sortable='" + $(parent).attr('id') + "']");
+                    console.log($parentEl)
                     $parentEl.val(self.getKeys($(parent)));
                 }
                 self.$element.val(self.getKeys());
